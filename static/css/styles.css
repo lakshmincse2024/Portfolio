@@ -355,6 +355,9 @@ nav a:hover {
         width: 100%;
     }
 }
+.social-icons img{
+object-fit: contain;
+}
 
 @media (max-width: 320px) {
     .name {
