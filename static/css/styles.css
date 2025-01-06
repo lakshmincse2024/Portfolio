@@ -54,11 +54,77 @@ nav a:hover {
 }
 
 .hero-section .right-content {
-    max-width: 45%;
+    max-width: 100%;
     padding: 60px;
     text-align: center;
 }
+@media screen and (max-width: 1200px) {
+    /* For screens smaller than laptops */
+    header h1 {
+        font-size: 2em;
+    }
 
+    .about h2 {
+        font-size: 1.8em;
+    }
+
+    .about p {
+        font-size: 1.1em;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* For tablet screens */
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .about h2 {
+        font-size: 1.6em;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    nav a {
+        font-size: 1em;
+        display: block;
+        margin: 10px 0;
+    }
+
+    .about {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* For mobile screens */
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    .about h2 {
+        font-size: 1.4em;
+    }
+
+    .about p {
+        font-size: 0.9em;
+    }
+
+    nav a {
+        font-size: 0.9em;
+        margin: 10px 0;
+    }
+
+    .about {
+        padding: 20px;
+    }
+}
 /* About Section */
 .about-section {
     background-color: #222;
@@ -147,9 +213,6 @@ nav a:hover {
     padding: 20px;
     border-radius: 10px;
 }
-
-
-
 .left-content {
     max-width: 50%;
     padding: 20px;
@@ -237,161 +300,6 @@ nav a:hover {
     }
 }
 
-/* Add Media Queries */
-@media (max-width: 1024px) {
-    .hero-section {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .left-content {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .right-content {
-        max-width: 100%;
-        padding: 30px;
-    }
-
-    .name {
-        font-size: 50px;
-    }
-
-    .title {
-        font-size: 24px;
-    }
-
-    .cta-button {
-        margin-top: 15px;
-    }
-}
-
-/* For smaller devices like phones (<= 768px) */
-@media (max-width: 768px) {
-    body {
-        height: auto; 
-    }
-
-    nav a {
-        font-size: 10px;
-    }
-
-    .hero-section {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .left-content, .right-content {
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    .name {
-        font-size: 40px;
-    }
-
-    .title {
-        font-size: 20px;
-    }
-
-    .cta-button {
-        font-size: 10px;
-        padding: 8px 15px;
-    }
-
-    .profile-image {
-        max-width: 80%;
-    }
-
-    .about-text {
-        font-size: 14px;
-    }
-
-    .education-item {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .education-content h3 {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 480px) {
-    .name {
-        font-size: 30px;
-    }
-
-    .cta-button {
-        font-size: 10px;
-        padding: 8px 15px;
-    }
-
-    .profile-image {
-        max-width: 70%;
-    }
-
-    .about-text {
-        font-size: 12px;
-    }
-    
-    .skills-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .skill-card {
-        width: 90%;
-    }
-
-    .timeline {
-        margin-left: 20px;
-    }
-
-    .timeline-item {
-        width: 100%;
-    }
-}
-.social-icons img{
-object-fit: contain;
-}
-
-@media (max-width: 320px) {
-    .name {
-        font-size: 26px;
-    }
-
-    .cta-button {
-        font-size: 8px;
-        padding: 6px 12px;
-    }
-
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-pic {
-        width: 80%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .about-text {
-        font-size: 10px;
-    }
-
-    .education-item {
-        padding: 15px;
-    }
-
-    .education-content h3 {
-        font-size: 16px;
-    }
-}
 .title {
     font-size: 30px;
     font-style: italic;
@@ -412,17 +320,6 @@ object-fit: contain;
     }
 }
 
-/* footer {
-    position: fixed; 
-    bottom: 0;
-    width: 100%;
-    background-color:black;
-    color: #fff;
-    text-align: right;
-    padding: -50px;
-    font-size: -10px !important; 
-    bottom: -20px; 
-} */
 
 h2 {
     font-size: 2.5rem;
@@ -528,16 +425,6 @@ h2:hover::after {
 .resume-link:hover {
     background-color: wheat; 
     text-decoration: underline;
-}
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-text {
-        margin-top: 20px;
-    }
 }
 
 a {
@@ -727,38 +614,6 @@ a:hover {
     }
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .education-container {
-        width: 90%;
-        margin-top: 120px;
-        padding: 25px 10px;
-    }
-
-    .education-item {
-        flex-direction: column; /* Stack logo and content vertically on smaller screens */
-        text-align: center;
-    }
-
-    .college-logo {
-        margin-right: 0;
-        margin-bottom: 20px; /* Add space between logo and content */
-    }
-
-    .education-content h2 {
-        font-size: 28px;
-    }
-
-    .education-content p {
-        font-size: 14px;
-    }
-
-    ul li {
-        font-size: 12px;
-    }
-}
-
-
 @keyframes typing {
     from { width: 0; }
     to { width: 100%; }
@@ -798,26 +653,12 @@ a:hover {
     transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
-
-/* styles.css */
-
 #skills {
-    /* background-color:black; */
     padding: 40px 0;
     text-align: center;
     color: white;
 }
 
-/* h2 {
-    font-size: 40px;
-    font-weight: bold;
-    color: orange;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    animation: fadeIn 1s ease-in-out;
-    text-align: center !important;
-} */
 
 .skills-container {
     display: flex;
@@ -828,7 +669,6 @@ a:hover {
 }
 
 .skill-card {
-    /* background: linear-gradient(135deg, #6a11cb, #2575fc); */
     background: linear-gradient(135deg,  #608BC1, #608BC1);
     border-radius: 12px;
     padding: 20px;
@@ -855,12 +695,6 @@ a:hover {
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
-
-/* .skill-card p {
-    font-size: 14px;
-    margin-top: 10px;
-} */
-
 .progress-bar {
     background-color: #ddd;
     border-radius: 10px;
@@ -876,18 +710,6 @@ a:hover {
     animation: progressFill 1s ease-in-out forwards;
 }
 
-
-@media (max-width: 768px) {
-    .skills-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skill-card {
-        width: 90%;
-    }
-} 
-/* Progress bar widths */
 .progress.mysql {
     width: 90%;
 }
@@ -906,7 +728,7 @@ a:hover {
 .progress.redis{
     width:50%;
 }
-/* Adjust the PHP logo */
+
 .php-logo {
     width: 40px;
     height: auto;
@@ -914,7 +736,6 @@ a:hover {
     display: block;
 }
 
-/* Grid Layout for Projects */
 #projects {
     padding: 50px 20px;
     background-color: black;
@@ -984,14 +805,6 @@ a:hover {
     color: black;
 }
 
-/* Media Query for Mobile */
-@media (max-width: 768px) {
-    .projects-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* General Styles for the Contact Section */
 #contact {
     padding: 40px 20px;
     background-color: black;
@@ -1059,44 +872,28 @@ a:hover {
 }
 
 button {
-    padding: 12px 12px; /* Slightly larger padding for a premium feel */
+    padding: 12px 12px; 
     background: linear-gradient(135deg, #feb47b, #ff7e5f);
-    /* Gradient background */
     color: white;
-    font-size: 18px;
-    /* font-weight: bold; Bold text for better visibility */
+    font-size: 18px; 
     border: none;
-    border-radius: 8px; /* Rounded corners for a modern look */
+    border-radius: 8px; 
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease;
     display: block;
     margin-left: auto;
-    text-align: center; /* Center-aligns the text */
+    text-align: center;
 }
 
 button:hover {
-    /* Reverse gradient on hover */
     background: linear-gradient(135deg,  #6a11cb, #2575fc);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Increases shadow depth */
-    transform: translateY(-2px); /* Adds a lift effect */
-    color: #fff; /* Keeps the text color consistent */
-}
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-2px); 
+    color: #fff;
+} 
 
 
-@media (max-width: 768px) {
-    .contact-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-form {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-}
-
-/* Footer styles */
 footer {
     background-color: #0A1128;
     color: #fff;
@@ -1123,7 +920,7 @@ footer {
 .footer-section h3 {
     font-size: 20px;
     margin-bottom: 15px;
-    color: #FFD700; /* Gold color for titles */
+    color: #FFD700; 
 }
 
 .footer-section p {
@@ -1172,40 +969,23 @@ footer {
     transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .footer-section {
-        text-align: center;
-    }
-
-    .social-icons {
-        justify-content: center;
-    }
-}
-
-/* Customize scrollbar track (the background of the scrollbar) */
 ::-webkit-scrollbar {
-    width: 8px;  /* Adjust the width of the scrollbar */
-    height: 2px; /* Adjust the height for horizontal scrollbar */
+    width: 8px;  
+    height: 2px; 
 }
 
-/* Customize the thumb (the draggable part of the scrollbar) */
+
 ::-webkit-scrollbar-thumb {
-    background-color: #382d74;  /* Thumb color */
+    background-color: #382d74;
     border-radius: 2px;
 }
 
-/* Customize the track (the background where the thumb slides) */
 ::-webkit-scrollbar-track {
-    background-color: black;  /* Track color */
+    background-color: black;  
     border-radius: 10px;
 }
 
-/* Optional: Customize the hover effect on the scrollbar thumb */
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #ff5722;  /* Change thumb color on hover */
+    background-color: #ff5722;  
 }
