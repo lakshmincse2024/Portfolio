@@ -355,6 +355,9 @@ nav a:hover {
         width: 100%;
     }
 }
+.social-icons img{
+object-fit: contain;
+}
 
 @media (max-width: 320px) {
     .name {
@@ -462,6 +465,7 @@ h2:hover::after {
     opacity: 1;
     transform: translateY(50px);
     transition: opacity 1s ease-out, transform 1s ease-out;
+    background-color: black !important;
 }
 
 .about-section.visible {
